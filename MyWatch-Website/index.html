@@ -1,16 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyWatch Anime</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MyWatch - Chill and Watch</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to MyWatch</h1>
-    <div id="anime-list">
-        <!-- Anime list will be displayed here -->
-    </div>
-    <script src="script.js"></script>
+  <header>
+    <h1>MyWatch 🐾</h1>
+    <p>Chill and watch your favorite anime</p>
+  </header>
+
+  <main id="anime-list">
+    <!-- Anime Cards -->
+    <section class="anime-section">
+      <h2>Inazuma Eleven GO - Season 1</h2>
+      <div class="anime-card">
+        <img src="https://i.imgur.com/your-image1.jpg" alt="Season 1">
+        <h3>Season 1: Chrono Stone</h3>
+        <a href="#" class="watch-btn">Watch Now</a>
+      </div>
+    </section>
+
+    <section class="anime-section">
+      <h2>Inazuma Eleven GO - Season 2</h2>
+      <div class="anime-card">
+        <img src="https://i.imgur.com/your-image2.jpg" alt="Season 2">
+        <h3>Season 2: Galaxy</h3>
+        <a href="#" class="watch-btn">Watch Now</a>
+      </div>
+    </section>
+
+    <section class="anime-section">
+      <h2>Inazuma Eleven GO - Season 3</h2>
+      <div class="anime-card">
+        <img src="https://i.imgur.com/your-image3.jpg" alt="Season 3">
+        <h3>Season 3: Final</h3>
+        <a href="#" class="watch-btn">Watch Now</a>
+      </div>
+    </section>
+
+    <section class="anime-section">
+      <h2>Movies</h2>
+      <div class="anime-card">
+        <img src="https://i.imgur.com/your-movie.jpg" alt="Movie">
+        <h3>Inazuma Eleven GO: Movie</h3>
+        <a href="#" class="watch-btn">Watch Now</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Calming Lofi BGM -->
+  <audio id="bgm" autoplay loop volume="0.1">
+    <source src="https://cdn.pixabay.com/download/audio/2022/10/20/audio_87f3aa233b.mp3" type="audio/mp3">
+  </audio>
+
+  <script>
+    // Lower volume and add pause/resume toggle if needed
+    const bgm = document.getElementById("bgm");
+    bgm.volume = 0.1;
+  </script>
 </body>
 </html>
